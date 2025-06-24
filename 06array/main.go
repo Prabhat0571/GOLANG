@@ -3,14 +3,13 @@ import(
 	"fmt"
 )
 func main(){
-	var fruitList[5]string
-	fruitList[0]="banana"
-	fruitList[1]="apple"
-	fruitList[2]="peach"
-	fruitList[3]="Watermelon"
-	
-	fmt.Println(fruitList)
-	fmt.Println(len(fruitList))
+	 var fruitList[5] int 
+	// fruitList[0]=1
+	 fmt.Println(fruitList)
+
+	//same line declaration with 2d arrays 
+	nums:= [2][2]int {{1,2},{3,4}}
+	fmt.Println(nums)
 	
 	
 	

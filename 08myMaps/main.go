@@ -4,14 +4,16 @@ import(
 )
 func main() {
 	fmt.Println("hello welcome to maps")
-	languages:=make(map[int]string)
-	languages[1]="english"
-	languages[2]="hindi"
-	fmt.Println(languages)
-	fmt.Println(languages[1])
-	//to remove we use delete
-	delete(languages,1)
-	fmt.Println(languages)
+	list:= make(map[int]string)
+	list[1]= "dal"
+	list[2]= "chawal"
+	list[3]= "bhindi"
+	list[4]= "arbi"
+	fmt.Println(list)
+     delete(list, 1)
+	 fmt.Println(list)
+	
+	
 
 	
 }
