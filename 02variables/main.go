@@ -6,4 +6,4 @@ func main() {
 	fmt.Scan(&username)
 	fmt.Println("Your username is: ",username)
 	
-}
+} 

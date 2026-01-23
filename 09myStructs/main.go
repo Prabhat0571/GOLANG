@@ -1,18 +1,47 @@
 package main
+
 import (
 	"fmt"
+	"time"
 )
-func main() {
-	fmt.Println("Welcome to structs")
-	//this are the alternative of the classes as we don't have classes in the golang
-	//we also don't have INHERITANCE in the golang
-	type User struct {
-		Name   string
-		email  string
-		status bool
-		age    int
-	}
+//structs helps us to achieve the functionality of classes as we dont have them in go
+type order struct{
+	id string
+	amount int
+	rating int 
+	status string
+	createdAt time.Time //timestamp
+
+}
+
+func (o *order) changeAmount(amount int){ //pass by reference k lye * lgao 
+	o.amount=amount
+}
+
+func main(){
 	
-	hitesh:= User{"prabhat", "prabhat@go.dev",true, 22 }
-	fmt.Println(hitesh)
+	nayaorder:= order{
+		id: "1",
+		amount: 200,
+		rating: 5,
+		status: "pending",
+		
+	}
+
+	// doosraOrder:= order{
+	// 	id: "1",
+	// 	amount: 20320,
+	// 	rating: 325,
+	// 	status: "confirmed",
+	// }
+
+	nayaorder.createdAt= time.Now()
+	
+	// fmt.Println(nayaorder)
+	// fmt.Println(doosraOrder)
+
+
+	nayaorder.changeAmount(300);
+	fmt.Println(nayaorder)
+
 }
