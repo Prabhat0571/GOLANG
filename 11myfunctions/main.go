@@ -7,9 +7,9 @@ import(
 // }
 
 // //to return a function with multiple values
-// func languages()(string, string, string){
-//       return "python", "rust" , "javascript"
- // }
+func languages()(string, string, string){
+      return "python", "rust" , "javascript"
+ }
 
 func processit(add func(a int)int){
 	add(2)

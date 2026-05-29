@@ -36,8 +36,9 @@ func main(){
 	} 	
 
 	for _, web :=range websiteList{
-		go getStatusCode(web)
 		wg.Add(1)
+		go getStatusCode(web)
+		
 	}
 	wg.Wait()
 }

@@ -3,7 +3,7 @@ import (
 	"fmt"
 	
 )
-func add(a int , b int )int {
+func add(a int ,b int )int {
 	return a+b	
 }
 
